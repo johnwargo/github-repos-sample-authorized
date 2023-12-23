@@ -12,7 +12,7 @@ module.exports = async function () {
   const apiKey = process.env.GITHUB_API_KEY;
   // make sure we have an API key
   if (!apiKey) {
-    console.error(`${appName} Error: GITHUB_API_KEY environment variable not set`);
+    console.error(`[${appName}] Error: Missing GITHUB_API_KEY environment variable`);
     process.exit(1);
   }
   // setup fetch options
