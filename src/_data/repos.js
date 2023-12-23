@@ -15,7 +15,7 @@ module.exports = async function () {
     console.error(`${appName} Error: GITHUB_API_KEY environment variable not set`);
     process.exit(1);
   }
-  // setup our fetch options
+  // setup fetch options
   const options = {
     headers: {
       'Authorization': `Bearer ${apiKey}`,

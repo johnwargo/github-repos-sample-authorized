@@ -18,7 +18,9 @@ Change the value in quotes to your GitHub account name then save your changes:
 const githubAccount = 'your-github-account-name';
 ```
 
-Next, open a terminal window or command prompt, navigate to the cloned project folder, and execute the following commands:
+Next, set an environment variable called `GITHUB_API_KEY` and store a GitBug API key in it.
+
+Finally, open a terminal window or command prompt, navigate to the cloned project folder, and execute the following commands:
 
 1. `npm install`
 2. `eleventy --serve`
