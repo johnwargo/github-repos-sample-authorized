@@ -34,7 +34,7 @@ module.exports = async function () {
       if (tempRes.length === 0) {
         done = true;
       } else {
-        console.log(`Batch: Retrieved metadata for ${tempRes.length} repos`);
+        console.log(`Retrieved metadata for ${tempRes.length} repos`);
         result = result.concat(tempRes);
       }
     } else {
@@ -45,4 +45,4 @@ module.exports = async function () {
   }
   console.log(`Retrieved metadata for ${result.length} repos`);
   return result;
-}
+};
