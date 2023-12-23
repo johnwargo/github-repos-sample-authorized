@@ -1,0 +1,22 @@
+---
+layout: default
+title: Eleventy Display GitHub Repositories
+---
+
+This page displays all of the repositories for the configured GitHub user account from <a href="https://github.com/johnwargo/github-repos-sample-unauthorized" target="_blank">Eleventy Display GitHub Repositories (no auth)</a>.
+
+{% if repos.length > 0 %}
+  <p>Number of Repositories: {{ repos.length }}</p>
+  <ul>
+  {% for repo in repos %}
+    <li>   
+      <a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a>
+      {% if repo.description.length > 0 %}
+        {{ repo.description }}
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>  
+{% else %}
+  <p>No repository data to display</p>
+{% endif %}

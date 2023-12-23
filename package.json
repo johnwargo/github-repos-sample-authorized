@@ -1,0 +1,16 @@
+{
+  "name": "github-repos-sample-unauthorized",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "John M. Wargo",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "github:11ty/eleventy"
+  }
+}
